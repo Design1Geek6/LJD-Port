@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
 
-	<!-- Learn how to use git with these sites https://guides.github.com/activities/hello-world/ and https://github.com/-->
+	<!-- Learn how to use git with these sites https://guides.github.com/activities/hello-world/ and https://github.com/
+
+		** blog.teamtreehouse.com/create-an-absolute-basic-mobile-css-responsive-navigation-menu ** this is the link to the menu top you like for mobile **
+
+		Hex Colors ff8583 (salmon) 680000 (deep red) 000 (black) 404040 (charcol) fff (white) 
+		Logo Font is Franchise bold-->
 	
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="initial-scale=1.0"/>
@@ -16,37 +21,42 @@
 <body id="home">
 
 	<!-- Fixed Header with Navigation -->
+<div class="landing">
 	<header id="header">
 		<div class="header-container">
-			<div id="logo-wrapper">
-				<a href="#"><img src="lumber-logo" alt="lumberJack Design"></a>
+			<div class="logo-wrapper">
+				<a href="landing"><img src="img/lumber-logo-text-long.svg" alt="lumberJackDesign"></a>
 			</div>
 
 			<div id="nav-container">
 				<nav class="nav-wrapper">
-					<img src="menu-logo" alt="menu icon">
-					<ul class="nav-wrapper">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#hobbies">Hobbies</a></li>
-						<li><a href="#contact">Contact</a></li>
+					<button class="nav-menu-button"><img src="img/menu-icon.svg"></button> 
+					<ul class="nav-menu-list hidden">
+						<li class="li-border"><a href="#home">Home</a></li>
+						<li class="li-border"><a href="#about">About</a></li>
+						<li class="li-border"><a href="#projects">Projects</a></li>
+						<li class="li-border"><a href="#skills">Skills</a></li>
+						<li class="li-border"><a href="#hobbies">Hobbies</a></li>
+						<li ><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-	</header>
 
-	<!-- Landing page/Hero image -->
-	<section id="landing">
-		<div class="land-container">
-			<img id="hero" src="img/mobile-lumber.jpg" alt="lumberjack and son"/>
-			<h1 class="name">Tyler J. Morrill</h1>
+		<!-- Landing page/Hero image -->
+		<!-- dropdown menu is behind the info on the landin page, How do i fix it? -->
+	<div class="landing-info">
+		<div class="info-container">
+			<!--<img class="hero" src="img/lumber-mobile.jpg" alt="lumberjack and son"/>-->
+			<h1 class="name" style="color: #fff">Tyler <br>J. Morrill</h1>
 			<h4 class="tagline">Designer / UX-UI / Web</h4>
-			<button class="btn"><a href="port/port.html">PORTFOLIO</a></button>
+			<button class="btn btn-2 btn-2h"><a href="port/port.html">PORTFOLIO</a></button>
 		</div>
-	</section>
+	</div>
+	</header>
+</div>
+
+	
 
 	<!-- Main Page Content -->
 
@@ -54,41 +64,61 @@
 	<section id="about">
 		<div class="about-container">
 			<div class="head-wrapper">
-				<img src="#" alt="wood slice">
-				<h1 class="about-title">WEARING FLANNEL</h1>
-				<h2 class="about-sub">"ABOUT ME"</h2>
+				<!--<img src="img/wood-icon.svg" alt="wood slice"> -->
+				<div class="text">
+					<h1 class="title">WEARING FLANNEL</h1>
+					<h2 class="sub">"ABOUT ME"</h2>
+				</div>
 			</div>
-
-				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p>
-
-				<img src="#" alt="lumberjack trees">
+				
+				<div class="about-paragraph">
+					<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p>
+				</div>
+				<div class="about-img">
+					<!--<img src="img/lumber-logo-tree.svg" alt="lumberjack trees">-->
+				</div>
 
 			<div class="exp-wrapper">
 				<h3 class="exp-title">EXPERIANCES</h3>
 			</div>
 
-			<div class="dg-wrapper">
-				<img src="#" alt="axe icon">
-				<h4>FREELANCE DESIGNER</h4>
-				<h5>DesignGeek - 2015 - Current</h5>
-				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p>
+			<div class="exp-content">
+				<div class="heading-wrapper">
+					<img src="img/axe-icon.svg" alt="axe icon" height="30">
+					<div class="heading-txt">
+						<h4 class="exp-heading">FREELANCE DESIGNER</h4>
+						<h5>DesignGeek - 2015 - Current</h5>
+					</div>
+				</div>
+				<p>Create web site layouts that appeal to leaders in high-tech world. Created the look and feel of online presence through UX design principles. Developed graphics that simplified complex messages. Design web pages and graphic
+				elements. Used customers feedback to create user friendly experiences,bthat surpassed customers goals.</p>
 			</div>
 
-			<div class="sb-wrapper">
-				<img src="#" alt="axe icon">
-				<h4>FREELANCE DESIGNER</h4>
-				<h5>Summit Branding - 2015 - 2017</h5>
-				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p>
+			<div class="exp-content">
+				<div class="heading-wrapper">
+					<img src="img/axe-icon.svg" alt="axe icon" height="30">
+					<div class="heading-txt">
+						<h4 class="exp-heading">FREELANCE DESIGNER</h4>
+						<h5>Summit Branding - 2015 - 2017</h5>
+					</div>
+				</div>
+				<p>Create web site layouts that appeal to leaders in high-tech world. Created the look and feel of online presence through UX design principles. Developed graphics that simplified complex messages. Design web pages and graphic elements. Used customers feedback to create user friendly experiences that surpassed customers goals</p>
 			</div>
 
-			<div class="sp-wrapper">
-				<img src="#" alt="axe icon">
-				<h4>ART DIRECTOR / DESIGNER</h4>
-				<h5>sign Pro Inc. - 2002 - Current</h5>
-				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p>
+			<div class="exp-content">
+				<div class="heading-wrapper">
+					<img src="img/axe-icon.svg" alt="axe icon" height="30">
+					<div class="heading-txt">
+						<h4 class="exp-heading">ART DIRECTOR / DESIGNER</h4>
+						<h5 >sign Pro Inc. - 2002 - Current</h5>
+					</div>
+				</div>
+				<p>Met with customers and prepared Layouts and drawings based on customer input. Designed artistic logos and signage for several companies while adhering to their brand guidelines. Prioritized graphic workload and eﬀectively coordinated multiple projects from concept to completion. Created graphic material for the company website.</p>
 			</div>
 
-			<button class="btn"><a href="port/port.html"><img src="#" alt="download">DOWNLOAD RESUME</a></button>
+			<div class="d-btn">
+				<button class="btn btn-2 btn-2h""><a class="d-txt" href="port/port.html"><img class="d-icon"src="img/download-icon.svg" alt="download">DOWNLOAD RESUME</a></button>
+			</div>
 		</div>
 
 
@@ -98,61 +128,74 @@
 	<section id="projects">
 		<div class="project-container">
 			<div class="head-wrapper">
-				<img src="#" alt="wood slice">
-				<h1 class="projects-title">LOGGING TREES</h1>
-				<h2 class="projects-sub">"PROJECTS"</h2>
+				<!--<img src="img/wood-icon.svg" alt="wood slice">-->
+				<div class="text">
+					<h1 class="projects-title">LOGGING TREES</h1>
+					<h2 class="projects-sub">"PROJECTS"</h2>
+				</div>
 			</div>
 
 				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p>
 
-			<div class="st-container">
-				<img class="stmi" src="#" alt="source to machine inc logo">
-				<a href="#">www.SourceToo.com</a>
-				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p> 
+			<div class="pro-container">
+				<div class="link-img">
+					<a class="stmi" href ="#"><!--<img class="stmi" src="img/stmi.png" alt="source to machine inc logo" height="90px">--></a>
+				</div>
+				<a  class="pro-link" href="#">www.SourceToo.com</a>
+				<p>Digitized existing logo to be used in online presence. Designed web page layouts and graphical elements.</p> 
 			</div>
 
-			<div class="kc-container">
-				<img class="koc" src="#" alt="kids of camelot daycare logo">
-				<a href="#">www.KidsOf Camelot.net</a>
-				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p> 
+			<div class="pro-container">
+				<div class="link-img">
+					<a class="koc" href="#"><!--<img class="koc" src="img/KOC.svg" alt="kids of camelot daycare logo">--></a>
+				</div>
+				<a class="pro-link" href="#">www.KidsOf Camelot.net</a>
+				<p>Designed responsive website layouts using UX design principles to meet customers and end user goals. Created SVG Graphics and backgrounds displayed on website</p> 
 			</div>
 
-			<div class="aa-wrapper">
-				<img class="affleck" src="#" alt="ask affleck logo">
-				<a href="#">www.AskAffleck.com</a>
-				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p> 
+			<div class="pro-container">
+				<div class="link-img">
+					<a class="aska" href="#"><!--<img class="affleck" src="img/affleck-logo.svg" alt="ask affleck logo">--></a>
+				</div>
+				<a class="pro-link" href="#">www.AskAffleck.com</a>
+				<p>Designed Logo and branding for customer. Designed layout and graphica  elements for website. Worked with front-end developer to ensure consistency was met throughout the site</p> 
 			</div>
 
-			<button class="btn"><a href="port/port.html">PORTFOLIO</a></button>
+			<div class="p-btn">
+				<button class="btn btn-2 btn-2h"><a href="port/port.html">PORTFOLIO</a></button>
+			</div>
 		</div>
 
 	</section>
 	
 	<!--Skills-->
 	<section id="Skills">
-		<div class="prj-container">
+		<div class="skill-container">
 			<div class="head-wrapper">
-				<img src="#" alt="wood slice">
-				<h1 class="projects-title">CHOPPING WOOD</h1>
-				<h2 class="projects-sub">"SKILLS"</h2>
+				<!--<img src="img/wood-icon.svg" alt="wood slice">-->
+				<div class="text">
+					<h1 class="skills-title">CHOPPING WOOD</h1>
+					<h2 class="skills-sub">"SKILLS"</h2>
+				</div>
 			</div>
 	<!--Not sure if a ul is the best way to do this What are some other options?? Also how to get the line likein the design?-->
 			<div class="skills-container">
 				<ul class="skills-wrapper">
-					<li>CSS<img src="#" alt="css icon"></li>
-					<li><img src="#" alt="css icon">HTML</li>
-					<li>Branding<img src="#" alt="css icon"></li>
-					<li><img src="#" alt="css icon">Javascript</li>
-					<li>Prototypes<img src="#" alt="css icon"></li>
-					<li><img src="#" alt="css icon">Web Design</li>
-					<li>Iconography<img src="#" alt="css icon"></li>
-					<li><img src="#" alt="css icon">Wire Frames</li>
-					<li>UX/UI Design<img src="#" alt="css icon"></li>
-					<li><img src="#" alt="css icon">A Quick Study</li>
-					<li>Graphic Design<img src="#" alt="css icon"></li>
-					<li><img src="#" alt="css icon">Adobe Illustrator</li>
-					<li>Adobe Photoshop<img src="#" alt="css icon"></li>
-					<li><img src="#" alt="css icon">Project Mngmt</li>
+					<div class="vertical-rule"></div>
+					<li>CSS<img class="pink-box"src="img/css-icon.svg"" alt="css icon"></li>
+					<li><img class="pink-box" src="img/html-icon.svg" alt="html icon">HTML</li>
+					<li>Branding<img class="pink-box" src="img/thumb-print.svg" alt="branding icon"></li>
+					<li><img class="pink-box" src="img/js-icon.svg" alt="java script icon">Javascript</li>
+					<li>Prototypes<img class="pink-box" src="img/prototype-icon.svg" alt="prototype icon"></li>
+					<li><img class="pink-box" src="img/web-icon.svg" alt="web design icon">Web Design</li>
+					<li>Iconography<img class="pink-box" src="img/Iconography-icon.svg" alt="icon icon"></li>
+					<li><img class="pink-box" src="img/wireframe-icon.svg" alt="wire frame icon">Wire Frames</li>
+					<li>UX/UI Design<img class="pink-box" src="img/uxui-icon.svg" alt="ux ui icon"></li>
+					<li><img class="pink-box" src="img/Study-icon.svg" alt="quick study icon">A Quick Study</li>
+					<li>Graphic Design<img class="pink-box" src="img/graphic-design-icon.svg" alt="graphic design icon"></li>
+					<li><img class="pink-box" src="img/AI-icon.svg" alt="adobe illustrator icon">Adobe Illustrator</li>
+					<li>Adobe Photoshop<img class="pink-box" src="img/ps-icon.svg" alt="adobe photoshop icon"></li>
+					<li><img class="pink-box" src="img/project-icon.svg" alt="project management icon">Project Mngmt</li>
 				</ul>
 			</div>
 		</div>
@@ -162,54 +205,62 @@
 	<section id="hobbies">
 		<div class="hbe-container">
 			<div class="head-wrapper">
-				<img src="#" alt="wood slice">
-				<h1 class="projects-title">BEARD GROWING</h1>
-				<h2 class="projects-sub">"HOBBIES &amp; INTERESTS"</h2>
+				<!--<img src="img/wood-icon.svg" alt="wood slice">-->
+				<div class="text">
+					<h1 class="hobbies-title">BEARD GROWING</h1>
+					<h2 class="hobbies-sub">"HOBBIES &amp; INTERESTS"</h2>
+				</div>
+			</div>
+			<div class="hbe-row">
+				<div class="hbe-wrapper">
+   					<img class="h-icon" src="img/archery-icon.svg" alt="Archery">
+      				<div class="desc">Archery</div>
+				</div>
+
+
+				<div class="hbe-wrapper">
+				    <img class="h-icon" src="img/fish-icon.svg" alt="Fishing">
+				     <div class="desc">Fishing</div>
+				</div>
+
+				<div class="hbe-wrapper">
+				    <img class="h-icon" src="img/boot-icon.svg" alt="Hiking">
+				    <div class="desc">Hiking</div>
+				</div>
 			</div>
 
-			<div class="hbe-wrapper">
-   				<img class="circle" src="#" alt="Archery">
-      			<div class="desc">Archery</div>
-			</div>
+			<div class="hbe-row">
+				<div class="hbe-wrapper">
+		    		<img class="h-icon" src="img/trailer-icon.svg" alt="Camping">
+      				<div class="desc">Camping</div>
+				</div>
 
-			<div class="hbe-wrapper">
-			    <img class="circle" src="#" alt="Fishing">
-			     <div class="desc">Fishing</div>
-			</div>
+				<div class="hbe-wrapper">
+				    <img class="h-icon" src="img/chop-icon.svg" alt="Chopping Wood">
+				    <div class="desc">Chopping Wood</div>
+				</div>
 
-			<div class="hbe-wrapper">
-			    <img class="circle" src="#" alt="Hiking">
-			    <div class="desc">Hiking</div>
+				<div class="hbe-wrapper">
+				    <img class="h-icon" src="img/mt-bike-icon.svg" alt="Mt. Biking">
+			 	   <div class="desc">Mt. Biking</div>
+				</div>
 			</div>
+			
+			<div class="hbe-row">	
+				<div class="hbe-wrapper">
+				    <img class="h-icon" src="img/soccer-icon.svg" alt="Soccer">
+				    <div class="desc">Soccer</div>
+				</div>
 
-			<div class="hbe-wrapper">
-		    	<img class="circle" src="#" alt="Camping">
-      			<div class="desc">Camping</div>
-			</div>
+				<div class="hbe-wrapper">
+				    <img class="h-icon" src="img/motorcycle-icon.svg" alt="Motorcycles">
+				    <div class="desc">Motorcycles</div>
+				</div>
 
-			<div class="hbe-wrapper">
-			    <img class="circle" src="#" alt="Chopping Wood">
-			    <div class="desc">Chopping Wood</div>
-			</div>
-
-			<div class="hbe-wrapper">
-			    <img class="circle" src="#" alt="Mt. Biking">
-			    <div class="desc">Mt. Biking</div>
-			</div>
-
-			<div class="hbe-wrapper">
-			    <img class="circle" src="#" alt="Soccer">
-			    <div class="desc">Soccer</div>
-			</div>
-
-			<div class="hbe-wrapper">
-			    <img class="circle" src="#" alt="Motorcycles">
-			    <div class="desc">Motorcycles</div>
-			</div>
-
-			<div class="hbe-wrapper">
-			    <img class="circle" src="#" alt="Chickens">
+				<div class="hbe-wrapper">
+				    <img class="h-icon" src="img/chicken-icon.svg" alt="Chickens">
 			    <div class="desc">Chickens</div>
+			</div>
 			</div>
 		</div>
 	</section>
@@ -217,10 +268,12 @@
 	<!--contact-->
 	<section id="contact">
 		<div class="contact-container">
-			<div class="head-wrapper">
-				<img src="#" alt="wood slice">
-				<h2 class="projects-title">Lets Saw Some Wood</h2>
-				<h1 class="projects-sub">"CONTACT ME"</h1>
+			<div class="contact-wrapper">
+				<!--<img src="img/saw-icon.svg" alt="wood slice">-->
+				<div class="text">
+					<h1 class="contact-title">Lets Saw Some Wood</h2>
+					<h2 class="contact-sub">"CONTACT ME"</h1>
+				</div>
 			</div>
 <!-- php for contact form
 <?php
@@ -255,43 +308,50 @@ else { ?>
 <?php
 }
 ?>
- -->
-			<form action="contact.php" method="post" id="form">
+ <-->	<div class="form-styling">
+			<form action="php/contact.php" method="post" id="form">
 				<fieldset class="form-container">
 					<input type="text" name="c-name" value="Name (Required)" required>
 					<input type="email" name="c-email" value="Email (Required)" required>
 					<textarea name="c-message" maxlength="120">Send me your info</textarea><br>
 					<!-- <input type="button" name="push" value="PUSH"> -->
-					<button type="button" name="push">PUSH</button>
+					<div Class="form-btn">
+						<button class="btn btn-2 btn-2h" type="button" name="push">PUSH</button>
+					</div>
 				</fieldset>
 			</form>
+		</div>
 		</div>
 	</section>
 
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="foot-container">
-			<div>
-				
-			</div>
-			<div class="by-line">
-				<p>The younger lumberjack was full of enthusiasm and went off into the woods and started cutting trees immediately. He worked all through the day, barely taking time to catch his breath or to grab some food and water.</p>
-			</div>
 			<nav>
 				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About Me</a></li>
-					<li><a href="#linedin"><img src="#" alt="linedin icon">Linedin</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#facebook"><img src="#" alt="facebook icon">Facebook</a></li>
-					<li><a href="#hobbies">Hobbies</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#pinterestt"><img src="#" alt="pinterest icon">Pinterest</a></li>
+
+				<div class="foot-link">
+					<li><a href="#home">HOME</a></li>
+					<li><a class="red-txt"href="#about">ABOUT ME</a></li>
+					<li><a href="#linedin"><img class="social-icon" src="img/in-icon.svg" alt="linedin icon">LINKEDIN</a></li>
+				</div>
+			
+				<div class="foot-link">
+					<li><a href="#projects">PROJECTS</a></li>
+					<li><a class="red-txt"href="#skills">SKILLS</a></li>
+					<li><a href="#facebook"><img class="social-icon" src="img/fb-icon.svg" alt="facebook icon">FACEBOOK</a></li>
+				</div>
+			
+				<div class="foot-link">
+					<li><a href="#hobbies">HOBBIES</a></li>
+					<li><a class="red-txt"href="#contact">CONTACT</a></li>
+					<li><a href="#pinterest"><img class="social-icon" src="img/pin-icon.svg" alt="pinterest icon">PINTEREST</a></li>
+				</div>
+			
 				</ul>
 			</nav>
 			<div>
-				<p>&copy; 2018 Tyler J. Morrill. Thanks for coming to my neck of the woods. Email me with questions and suggestions for improvement on this site at <a class="email-link" href="mailto:design.geek@outlook.com?subject=LJDResponse">Design.geek@outlook.com</a></p>
+				<p class="by-line">&copy; 2018 Tyler J. Morrill. Thanks for coming to my neck of the woods. Email me with questions and suggestions for improvement on this site at <a class="email-link" href="mailto:design.geek@outlook.com?subject=LJDResponse">Design.geek@outlook.com</a></p>
 			</div>
 		</div>
 	</footer>
